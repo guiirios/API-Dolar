@@ -31,9 +31,10 @@ def dolar():
     ask = float(dados["USDBRL"]["ask"])
 
     return {
-        "dolar bid" :f"R$ {round(valor, 2)}",
-         "dolar ask":f"R$ {round(ask, 2)}"
+        "Compra Cliente" :f"R$ {round(valor, 2)}",
+         "Venda Cliente":f"R$ {round(ask, 2)}"
         }
+
 
 app.run()
 
