@@ -25,14 +25,21 @@ def dolar():
     #buscar dados
     url = requests.get("https://economia.awesomeapi.com.br/json/last/USD-BRL")
     #estruturar os dados
+
     dados = url.json()
     #retornar
     valor = float(dados["USDBRL"]["bid"])
     ask = float(dados["USDBRL"]["ask"])
+    high = float(dados["USDBRL"]["high"])
+    low = float(dados["USDBRL"]["low"])
 
     return {
         "Compra Cliente" :f"R$ {round(valor, 2)}",
-         "Venda Cliente":f"R$ {round(ask, 2)}"
+         "Venda Cliente":f"R$ {round(ask, 2)}",
+         "Alta":f"R$ {round(high, 2)}",
+         "Baixa":f"R$ {round(low, 2)}"
+
+
         }
 
 
