@@ -23,6 +23,7 @@ API externa: AwesomeAPI
 /dolar
 
 
-📄 requirements.txt
-flask
-requests
+## 📄 requirements.txt
+
+- flask
+- requests
