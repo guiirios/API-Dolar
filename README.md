@@ -13,6 +13,16 @@ Este é um projeto simples de uma API desenvolvida em **Python com Flask** que c
 
 ---
 
-## 📡 Endpoints
+🛠️ Tecnologias utilizadas
+Python 🐍
+Flask 🌐
+Requests 🌍
+API externa: AwesomeAPI
 
 ### 🔹 Rota principal
+/dolar
+
+
+📄 requirements.txt
+flask
+requests
